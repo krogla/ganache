@@ -143,8 +143,13 @@ export class Connector<
         results.structLogs.length > this.BUFFERIFY_THRESHOLD
       ) {
         return bufferify(json, "");
-      } else {
+      }
+
+      // fallback to bufferify if JSON.stringify fails
+      try {
         return JSON.stringify(json);
+      } catch (e) {
+        return bufferify(json, "");
       }
     }
   }
