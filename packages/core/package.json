@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.10.2",
+  "version": "0.10.2-lido",
   "description": "A library to create a local blockchain for fast Ethereum development.",
   "author": "David Murdoch <david@trufflesuite.com> (https://davidmurdoch.com)",
   "homepage": "https://github.com/trufflesuite/ganache/tree/develop/packages/core#readme",
@@ -48,7 +48,7 @@
     "tooling"
   ],
   "dependencies": {
-    "@ganache/ethereum": "0.10.2",
+    "@ganache/ethereum": "0.10.2-lido",
     "@ganache/flavor": "0.10.2",
     "@ganache/options": "0.9.2",
     "@ganache/utils": "0.9.2",
